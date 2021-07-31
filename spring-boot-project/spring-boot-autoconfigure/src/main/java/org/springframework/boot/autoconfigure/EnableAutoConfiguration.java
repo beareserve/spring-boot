@@ -80,7 +80,7 @@ import org.springframework.core.io.support.SpringFactoriesLoader;
 @Documented
 @Inherited
 @AutoConfigurationPackage
-@Import(AutoConfigurationImportSelector.class)
+@Import(AutoConfigurationImportSelector.class) //k66:k2:import了一个DeferredImportSelect到spring
 public @interface EnableAutoConfiguration {
 
 	/**
